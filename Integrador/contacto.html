@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contacto</title>
+
+    <style>
+
+        h1 {
+            font-family: arial;
+            text-align: center;
+        }
+
+        input {
+            background-color:#ebefde;
+            height: 40px;
+            margin: 15px;
+        }
+
+        textarea {
+
+            background-color:#ebefde;
+            margin: 15px;
+        }
+
+        #btn {
+            width: 210px;
+        }
+    
+    
+    </style>
+  </head>
+  <body>
+        <!-- inicio header -->
+        <header>
+          <!-- logo -->
+          <div id="logo">
+            
+              <img
+                src="imagenes/banner.jpg"
+                alt="Avion volando"
+                width="1100"
+                height="300"
+                title="avion aterrizando"
+              />
+            
+          </div>
+    
+          <!-- fin logo -->
+    
+          <!-- espacio -->
+          <br />
+          <!-- fin espacio -->
+    
+          <div id="linea-blanca">
+            <center>
+              <img src="imagenes/line.jpg" alt="linea blanca" width="1100px" />
+            </center>
+          </div>
+    
+          <nav>
+            <!-- esto "&nbsp" se usa para dar espacios horizontales -->
+            <center>
+            <p class="menu">
+              ::INICIO::&nbsp&nbsp&nbsp -&nbsp&nbsp&nbsp Promociones - Paquetes 2019 -
+              Temporada baja - Hoteles - <a href="">Contactenos</a>
+            </p>
+          </center>
+            
+            <div id="linea-blanca">
+                <center>
+                  <img src="imagenes/line.jpg" alt="linea blanca" width="1100px" />
+                </center>
+          </nav>
+        </header>
+    
+        <!-- fin header -->
+    
+        <h1 id="titulo">Formulario de consultas</h1>
+        <br />
+        <h2 id="subtitulo">La isla del sol y la adrenalina</h2>
+    
+        <br />
+
+        <form action="enviarProfe.php" method="POST">
+
+            <input type="text" name="Nombre-y-apellido" placeholder="Nombre y apellido:" size="28px">
+
+            <br>
+
+            <input type="text" name="email" placeholder="indique su mail" size="28px">
+            <br>
+            <textarea name="consulta" id="" cols="27" rows="7" size="28px" placeholder="escriba su consulta"></textarea>
+
+            <br>
+
+            <input id="btn" type="submit" value="Enviar" size="28px">
+
+        </form>
+    
+        
+      </body>
+    <
+</html>

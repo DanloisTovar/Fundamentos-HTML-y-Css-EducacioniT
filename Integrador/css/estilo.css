@@ -1,0 +1,273 @@
+/* General */
+
+* {
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* documento general */
+
+body {
+  background-color: #e9e2d2;
+  font-family: arial;
+  text-align: justify;
+}
+/* inicio contenedores */
+#contenedor-imagen-logo {
+  background: url(../imagenes/fondologolisto0.jpg);
+  background-repeat: no-repeat;
+  width: 1530;
+  height: 270;
+  object-fit: cover;
+}
+nav {
+  text-align: center;
+}
+
+#logos {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0;
+}
+
+#imagenes-aterrizajes {
+  border-radius: 1%;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  object-fit: cover;
+  position: relative;
+  animation-name: initial;
+}
+
+#fotos-isla {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: auto;
+  object-fit: cover;
+  position: relative;
+  animation-name: initial;
+}
+
+#navegador {
+  color: #e78200;
+}
+
+/* fin contenedores */
+
+/* inicio LETRAS */
+
+h2 {
+  color: #e78200;
+  font-family: "Permanent Marker", cursive;
+}
+
+h3 {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+}
+
+p {
+  line-height: 25px;
+}
+
+.Titulo {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: #e78200;
+  font-size: 30px;
+}
+
+/* fin LETRAS */
+
+/* IMAGENES */
+
+#logo1 {
+  width: 260px;
+  padding: 0;
+  margin: auto;
+}
+
+#linea img {
+  width: 100%;
+}
+
+/* imanges de isla */
+.img-isla {
+  border-radius: 10px;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #e78200;
+}
+
+img.img-isla:hover {
+  width: 390px;
+}
+
+img.img-isla {
+  width: 300px;
+  transition: width 0.5s ease;
+}
+
+/* imagenes aterrizaje */
+.img-aterrizaje {
+  border-radius: 10px;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #e78200;
+}
+
+img.img-aterrizaje:hover {
+  width: 390px;
+}
+
+img.img-aterrizaje {
+  width: 300px;
+  transition: width 0.5s ease;
+}
+
+/* fin IMAGENES */
+
+/* inicio FOOTER */
+
+footer {
+  width: 100%;
+  font-family: Raleway;
+  color: white;
+}
+
+.contenedor-footer {
+  width: 100%;
+  background: #e78200;
+  background-repeat: no-repeat;
+  background-size: 1530px 280px;
+  width: 1530px;
+  height: 280px;
+  object-fit: cover;
+  color: white;
+}
+.contenedor-principal {
+  width: 98%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.contenedor-principal .contenedor-colunma {
+  width: calc(100% / 3);
+  text-align: justify;
+}
+
+/*para accder a las columnas del footer y modicar la que sea necesaria*/
+
+.contenedor-principal .contenedor-colunma:nth-child(2) {
+  padding: 1 20px;
+}
+
+.contenedor-principal .contenedor-colunma h3 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contenedor-principal .contenedor-colunma input[type="email"] {
+  border: none;
+  width: 90%;
+  border: 1px solid white;
+  font-size: 14px;
+  padding: 10px;
+  font-family: Raleway;
+}
+
+textarea {
+  border: none;
+  width: 90%;
+  border: 1px solid white;
+  font-size: 14px;
+  padding: 8px;
+  font-family: Raleway;
+}
+
+.contenedor-principal .contenedor-colunma input[type="text"] {
+  border: none;
+  width: 90%;
+  border: 1px solid white;
+  font-size: 14px;
+  padding: 10px;
+  font-family: Raleway;
+}
+
+.contenedor-principal .contenedor-colunma input[type="submit"] {
+  border: none;
+  padding: 6px 30px;
+  font-size: 15px;
+  margin-top: 0px;
+  cursor: pointer;
+  font-family: Raleway;
+}
+
+.contenedor-principal .contenedor-colunma span p {
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  font-family: Raleway;
+}
+
+.footer-copyR-y-redes-sociales {
+  width: 100%;
+  background: #e78200;
+  border-top: 3px solid white;
+  object-fit: cover;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 1530px 280px;
+  width: 1530px;
+}
+.principal-copy-redes {
+  width: 98%;
+  max-width: 1000px;
+  padding: 15px 0;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.principal-copy-redes .footer-copy {
+  width: 70%;
+  color: white;
+}
+/* aqui arreglo cuanso se descuadra las redes sociales  */
+.principal-copy-redes .footer-redes {
+  width: 28%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.principal-copy-redes .footer-redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+/* fin FOOTER */

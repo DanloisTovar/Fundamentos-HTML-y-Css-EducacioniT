@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>::CLASE 3::</title>
+
+    <!-- Estilo CSS -->
+    <style type="text/css">
+      body {
+        background-color: #fbed9d;
+      }
+      label,
+      p,
+      h1,
+      h2,
+      h3 {
+        font-family: arial;
+      }
+
+      input {
+        height: 30px;
+        background-color: aliceblue;
+        color: green;
+      }
+
+      textarea {
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CONTACTENOS</h1>
+
+    <form action="enviar.php" method="post">
+      <p>Nombre y Apellido:</p>
+
+      <input type="text" name="nombres" size="50" value="" />
+      <br />
+      <br />
+      <input
+        type="text"
+        name="nombres2"
+        size="50"
+        value=""
+        placeholder="Escriba su nombre completo"
+      />
+      <input
+        type="text"
+        name="domicilio"
+        size="40"
+        value=""
+        placeholder="indique su domicilio"
+      />
+      <br /><br />
+
+      <input type="password" name="clave" size="50" placeholder="contraseña" required />
+      <br /><br />
+
+      <textarea
+        name="consulta"
+        id="cuadro-texto"
+        cols="27"
+        rows="7"
+        placeholder="Mensaje:"
+      ></textarea>
+      <br />
+      <input type="submit" value="Enviar Mensaje" /> <br /><br />
+      <input type="reset" value="Borrar datos" />
+      <br />
+      <br />
+      <hr />
+
+      <h2>Campos Avanzados</h2>
+      <label for="telefonos">Telefonos:</label> <br />
+      <input
+        type="text"
+        name="telefonos"
+        maxlength="13"
+        required="required"
+        placeholder="EJ: 011 2387-6095"
+      />
+
+      <br />
+      <br />
+
+      <label for="dni">Documento de identidad</label>
+      <!-- valida cantidad de caracteres minlength="8" maxlength="10" -->
+      <input type="text" name="dni" required minlength="8" maxlength="10" />
+      <br />
+      <label for="edad">Tu Edad:</label>
+      <input type="number" name="edad" required min="18" max="99" />
+
+      <br />
+      <br />
+
+      <h3>Campo checkbox</h3>
+      <label for="puestost">Puesto de trabajos buscado:</label> <br />
+      <input type="checkbox" name="directivo" id="directivo" value="directivo" />
+      <label for="direccion">Directivo</label><br />
+      <input type="checkbox" name="Administrativo" id="directivo" value="directivo" />
+      <label for="direccion">Administrativo</label><br />
+      <input type="checkbox" name="Maquetador" id="directivo" value="directivo" />
+      <label for="direccion">Maquetador</label>
+
+      <br />
+      <br />
+      <hr />
+
+      <h3>Campo Radiobuttom</h3>
+      <label for="sexo">Sexo:</label> <br />
+      <input
+        type="radio"
+        name="sexo"
+        id="sexo"
+        value="masculino"
+        checked="checked"
+      /><label for="masculino">Masculino</label>
+      <br />
+      <input
+        type="radio"
+        name="sexo"
+        id="sexo"
+        value="femenino"
+        checked="checked"
+      /><label for="femenino">Femenino</label>
+
+      <br />
+      <br />
+      <hr />
+
+      <h3>Ejemplo de lista desplegable</h3>
+      <label for="so">Sistema operativo</label>
+      <br />
+      <select name="so" id="so">
+        <option value="" selected="selected">seleccionar</option>
+        <option value="windows">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="Linux">Linux</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <br />
+      <br />
+
+      <h3>Ejemplo de lista desplegable</h3>
+      <label for="so">Sistema operativo</label>
+      <br />
+
+      <select name="so2" id="so" size="5">
+        <option value="windows" selected="selected">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="Linux">Linux</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <br /><br />
+
+      <h3>Ejemplo de lista desplegable</h3>
+      <label for="so">Sistema operativo</label>
+      <br />
+
+      <select name="so3" id="so" size="5" multiple="multiple">
+        <option value="windows" selected="selected">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="Linux">Linux</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <br />
+      <br />
+      <hr />
+
+      <h3>Videos Youtube IFRAME</h3>
+      <iframe
+        <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Dr6iQxNu0wo"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </form>
+  </body>
+</html>
